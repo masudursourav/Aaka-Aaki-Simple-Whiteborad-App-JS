@@ -1,0 +1,21 @@
+canvas {
+    border: 2px solid slateblue;
+    border-radius: 1em;
+}
+
+li {
+    margin-left: 1em;
+    padding: .5em;
+}
+
+.canvas-style {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    canvas#canvas {
+        height: 540px;
+        width: 540px;
+    }
+}

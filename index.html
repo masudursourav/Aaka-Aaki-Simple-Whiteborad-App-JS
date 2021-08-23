@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>আঁকা-আঁকি</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <label for="color_input">Brush color:</label>
+            <input id="color_input" type="color" value="#000000">
+        </li>
+        <li class="nav-item">
+            Brush shape :
+            <button class="btn btn-primary" onclick="circle_brush()">Circle</button>
+            <button class="btn btn-primary" onclick="square_brush()">Square</button>
+        </li>
+        <li class="nav-item">
+            <label for="size_input">brush size:</label>
+            <input id="size_input" max="256" min="0" type="number" value="5">
+        </li>
+        <li class="nav-item">
+            <label for="opacity_input">Brush opacity:</label>
+            <input id="opacity_input" max="100" min="0" step="any" type="number" value="100"></div>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-primary" onclick="fill_canvas()">Fill canvas</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-primary" id="save_button" onclick="save_image()">Download</button>
+        </li>
+    </ul>
+    <div class="canvas-style">
+        <canvas height="540" id="canvas" width="1280">canvas</canvas>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
